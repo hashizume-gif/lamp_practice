@@ -135,3 +135,7 @@ function is_valid_upload_image($image){
   return true;
 }
 
+//エスケープ処理を実装
+function h($str){
+  return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
+}
