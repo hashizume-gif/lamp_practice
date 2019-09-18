@@ -347,7 +347,6 @@ function ranking($db){
   buy_details.price,
   buy_details.item_id,
   buy_details.amount,
-  
   items.name
   from
   buy_header
