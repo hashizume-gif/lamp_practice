@@ -318,7 +318,7 @@ function ranking($db){
   $stmt->execute();
   return $ranking=$stmt->fetchALL();
 }
- function buy_header_select($db,$user_id){
+ function buy_header_select($db,$user_id,$item_id){
    $sql="
    SELECT
    buy_id,

@@ -26,11 +26,11 @@ if(is_logined() === false){
 
 // PDOを取得
 $db = get_db_connect();
-
+$item_id=grt_post('item_id');
 // PDOを利用してログインユーザーのデータを取得
 $user = get_login_user($db);
 //get_user_cartsにデータを表示
-$buy=buy_header_select($db,$user['user_id']);
+$buy=buy_header_select($db,$user['user_id'],$item_id);
 
 
 // ビューの読み込み。
