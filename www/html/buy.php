@@ -26,7 +26,7 @@ if(is_logined() === false){
 
 // PDOを取得
 $db = get_db_connect();
-$item_id=grt_post('item_id');
+$item_id=get_post('item_id');
 // PDOを利用してログインユーザーのデータを取得
 $user = get_login_user($db);
 //get_user_cartsにデータを表示
